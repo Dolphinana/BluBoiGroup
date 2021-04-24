@@ -28,7 +28,7 @@ Game::Game( MainWindow& wnd )
 {
 	for (int i = 0; i < groupCount; ++i)
 	{
-		group[i].Init((i + 1) * 4);
+		group[i].Init((i + 1) * 3);
 	}
 }
 
