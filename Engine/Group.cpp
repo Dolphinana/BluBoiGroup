@@ -2,8 +2,8 @@
 
 void Group::Update(Player & player, Graphics & gfx)
 {
-	vx = (player.x - x) / 2;
-	vy = (player.y - y) / 2;
+	vx = (player.x - x) / 4;
+	vy = (player.y - y) / 4;
 
 	x += vx;
 	y += vy;
