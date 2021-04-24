@@ -38,7 +38,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	player.Update(wnd);
+	player.Update(wnd,gfx);
 }
 
 void Game::ComposeFrame()

@@ -5,7 +5,7 @@
 class Player
 {
 public:
-	void Update(MainWindow& wnd);
+	void Update(MainWindow& wnd,Graphics& gfx);
 	void Draw(Graphics& gfx);
 	int x = 400;
 	int y = 300;
