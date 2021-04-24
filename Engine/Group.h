@@ -5,6 +5,7 @@
 class Group
 {
 public:
+	void Init(int in_i);
 	void Update(Player& player,Graphics& gfx);
 	void Draw(Graphics& gfx);
 
@@ -14,4 +15,6 @@ public:
 	int vy = 0;
 	int width = 12;
 	int height = 12;
+
+	int i = 4;
 };
