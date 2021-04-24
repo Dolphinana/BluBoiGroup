@@ -26,6 +26,10 @@ Game::Game( MainWindow& wnd )
 	wnd( wnd ),
 	gfx( wnd )
 {
+	for (int i = 0; i < groupCount; ++i)
+	{
+		group[i].Init((i + 1) * 4);
+	}
 }
 
 void Game::Go()
@@ -38,12 +42,18 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	group.Update(player, gfx);
+	for (int i = 0; i < groupCount; ++i)
+	{
+		group[i].Update(player, gfx);
+	}
 	player.Update(wnd,gfx);
 }
 
 void Game::ComposeFrame()
 {
-	group.Draw(gfx);
+	for (int i = 0; i < groupCount; ++i)
+	{
+		group[i].Draw(gfx);
+	}
 	player.Draw(gfx);
 }

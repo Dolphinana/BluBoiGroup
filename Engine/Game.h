@@ -46,6 +46,8 @@ private:
 	/*  User Variables              */
 
 	Player player;
-	Group group;
+
+	static constexpr int groupCount = 10;
+	Group group[groupCount];
 	/********************************/
 };
