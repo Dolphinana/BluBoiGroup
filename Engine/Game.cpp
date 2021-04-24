@@ -38,10 +38,12 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	group.Update(player, gfx);
 	player.Update(wnd,gfx);
 }
 
 void Game::ComposeFrame()
 {
+	group.Draw(gfx);
 	player.Draw(gfx);
 }
