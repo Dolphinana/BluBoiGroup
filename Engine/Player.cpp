@@ -6,19 +6,22 @@ void Player::Update(MainWindow & wnd, Graphics& gfx)
 	{
 		vx -= 1;
 	}
-	//else if (vx < 0) { vx += 1; }
+	else if (vx < 0) { vx += 1; }
 	if (wnd.kbd.KeyIsPressed(VK_RIGHT))
 	{
 		vx += 1;
 	}
+	else if (vx > 0) { vx -= 1; }
 	if (wnd.kbd.KeyIsPressed(VK_UP))
 	{
 		vy -= 1;
 	}
+	else if (vy < 0) { vy += 1; }
 	if (wnd.kbd.KeyIsPressed(VK_DOWN))
 	{
 		vy += 1;
 	}
+	else if (vy > 0) { vy -= 1; }
 
 	x += vx;
 	y += vy;
